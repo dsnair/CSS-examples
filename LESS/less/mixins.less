@@ -1,0 +1,22 @@
+.btn {
+    .custom-btn();
+}
+
+.custom-btn(@button-bg: @eastern-blue, @font-color: @white) {
+    background-color: @button-bg;
+    min-width: 80%;
+    height: 40px;
+    color: @font-color;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.6rem;
+}
+
+.flex(@dir, @justify, @align) {
+    display: flex;
+    flex-direction: @dir;
+    justify-content: @justify;
+    align-items: @align;
+}

@@ -1,0 +1,169 @@
+body {
+	max-width: 1000px;
+	margin: 2% auto;
+}
+
+main {
+	margin: 2% auto;
+	padding: 0 2%;
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+}
+
+@media(max-width: 800px) {
+	header {
+		flex-direction: column-reverse;
+	}
+}
+
+@media(max-width: 500px) {
+	header a {
+		width: 100vw;
+		border-bottom: 1px solid rgb(188,188,188);
+	}
+}
+
+@media(max-width: 800px) {
+	.logo {
+		display: block;
+		margin: 2% auto;
+		max-width: 50%;
+		height: auto;
+	}
+}
+
+nav {
+	width: 70%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+@media(max-width: 800px) {
+	nav {
+		width: 100%;
+		justify-content: space-evenly;
+	}
+}
+
+@media(max-width: 500px) {
+	nav {
+		flex-direction: column;
+		height: 40vh;
+	}
+}
+
+nav a {
+	text-decoration: none;
+	color: rgb(188,188,188);
+	cursor: pointer;
+}
+
+@media(max-width: 500px) {
+	nav a {
+		display: block;
+		align-items: center;
+		width: 100vw;
+		text-align: center;
+		border-bottom: 1px solid rgb(188,188,188);
+		height: 4vh;
+	}
+}
+
+.home-banner {
+	margin: 5%;
+	display: flex;
+	justify-content: space-between
+}
+
+@media(max-width: 800px) {
+	.home-banner img {
+		display: none;
+	}
+}
+
+.tagline {
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+@media(max-width: 800px) {
+	.tagline {
+		width: 100%;
+		height: auto;
+	}
+}
+
+.tagline h1 {
+	font-size: 6rem;
+}
+
+.tagline button {
+	border: 1px solid black;
+	text-align: center;
+	background-color: white;
+	height: 30px;
+	min-width: 80px;
+}
+
+.home-cards {
+	border: 1px black;
+	border-style: solid none;
+	margin: 2% 0;
+	padding: 2% 0;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	line-height: 1.5em;
+}
+
+@media(max-width: 500px) {
+	.home-cards {
+		flex-direction: column;
+	}
+}
+
+.middle-img {
+	display: block;
+	margin: 1% 0;
+	width: 100%;
+}
+
+#features, #about {
+	width: 40%;
+	margin: 1% 0;
+}
+
+#services, #product, #vision {
+	width: 30%;
+	margin: 1% 0;
+}
+
+@media(max-width: 500px) {
+	#features, #about, #services, #product, #vision {
+		width: 100%;
+	}
+}
+
+footer {
+	line-height: 1.5em;
+	margin: 2% auto;
+	padding: 0 2%;
+}
+
+#phone {
+	margin: 1% 0;
+}
+
+#copyright {
+	margin: 5% 0;
+	text-align: center;
+	font-size: 0.9em;
+}

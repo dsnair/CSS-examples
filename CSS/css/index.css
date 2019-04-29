@@ -1,0 +1,155 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+body {
+    max-width: 1000px;
+    margin: 2% auto;
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+}
+
+nav {
+	width: 70%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+nav a {
+	text-decoration: none;
+	color: rgb(188,188,188);
+	cursor: pointer;
+}
+
+.home-banner {
+	margin: 5%;
+	display: flex;
+	justify-content: space-between
+}
+
+.tagline {
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.tagline h1 {
+	font-size: 6em;
+}
+
+.tagline button {
+	border: 1px solid black;
+	height: 10%;
+	width: 20%;
+	text-align: center;
+}
+
+.home-cards {
+	border: 1px black;
+	border-style: solid none;
+	margin: 2% 0;
+	padding: 2% 0;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	line-height: 1.5em;
+}
+
+.middle-img {
+	display: block;
+	margin: 1% 0;
+	width: 100%;
+}
+
+#features, #about {
+	width: 40%;
+	margin: 1% 0;
+}
+
+#services, #product, #vision {
+	width: 30%;
+	margin: 1% 0;
+}
+
+#contact {
+	line-height: 1.5em;
+}
+
+#phone {
+	margin: 1% 0;
+}
+
+#copyright {
+	margin: 5% 0;
+	text-align: center;
+	font-size: 0.9em;
+}

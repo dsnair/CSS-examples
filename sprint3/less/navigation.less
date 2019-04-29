@@ -1,0 +1,26 @@
+.nav {
+    background-color: @nav-bg;
+    border: @sea-shell;
+    height: 10rem;
+    a {
+        text-decoration: none;
+        color: @river-bend;
+        font-size: 1.6rem;
+    }
+    .container {
+        .flex(column, center, center);
+        padding-top: 20px;
+        div {
+            width: 50%;
+            .flex(row, space-around, center);
+            padding: 20px 0;
+
+            @media @phone {
+                width: inherit;
+            }
+        }
+        h1 {
+            font-size: 3.6rem;
+        }
+    }
+}
